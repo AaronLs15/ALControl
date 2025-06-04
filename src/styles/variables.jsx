@@ -45,8 +45,12 @@ import { FcImageFile } from "react-icons/fc";
 import { IoIosArrowBack } from "react-icons/io";
 import { GrAdd } from "react-icons/gr";
 
+import { FaSearch } from "react-icons/fa";
+import { FaRegTrashCan } from "react-icons/fa6";
+
 
 export const v = {
+  iconobuscar: FaSearch,
   colorSecundario: `#DAC1FF`,
   colorPrincipal: `#048fd6`,
   iconoagregar:GrAdd,
@@ -78,6 +82,7 @@ export const v = {
   emoji: BsEmojiLaughing,
   iconeditarTabla: RiEditLine,
   iconeliminarTabla: RiDeleteBin2Line,
+  iconoaccionEliminar: FaRegTrashCan,
   colorIngresos: `#53B257`,
   colorbgingresos: `#e6ffe7`,
   colorGastos: `#fe6156`,
