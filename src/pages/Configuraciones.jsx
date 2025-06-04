@@ -1,6 +1,6 @@
 
 import { useQuery } from '@tanstack/react-query';
-import {CategoriasTemplate, Spinner1, useModulosStore} from '../index'
+import { ConfiguracionesTemplate, Spinner1, useModulosStore} from '../index'
 
 export function Configuraciones() {
   const {mostrarModulos} =useModulosStore()
@@ -11,5 +11,5 @@ export function Configuraciones() {
   if(error){
     return(<span>error...</span>)
   }
-  return (<CategoriasTemplate/>);
+  return (<ConfiguracionesTemplate/>);
 }

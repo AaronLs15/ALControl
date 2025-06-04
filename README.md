@@ -1,8 +1,3 @@
-# React + Vite
+#AL CONTROL
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La aplicación es un POS basado en React que utiliza Vite para el empaquetado y desarrollo con recarga en caliente. Para el enrutamiento se emplea React Router DOM, mientras que el estado global se maneja mediante Zustand y el contexto de autenticación se integra con Supabase, permitiendo iniciar sesión con Google y realizar operaciones CRUD desde las funciones definidas. React Query gestiona la obtención y cacheo de datos asincrónicos, y sus devtools facilitan la depuración. El estilo de la interfaz se implementa con Styled Components y se complementa con React Icons y @iconify/react. Para feedback visual se utilizan SweetAlert2 y React Spinners. Además, el proyecto incorpora ESLint para mantener coherencia en el código.

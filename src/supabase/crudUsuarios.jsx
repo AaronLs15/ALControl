@@ -9,3 +9,12 @@ export async function MostrarUsuarios (p) {
 export async function InsertarAdmin(p){
     await supabase.from(tabla).insert(p);
 }
+
+export async function ObtenerIdAuthSupabase() {
+    const {data:{session}} = await supabase.auth.getSession();
+    if(session != null){
+        const {user} = session;
+        const idauth=user.id;
+        return idauth
+    }
+}

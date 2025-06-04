@@ -1,4 +1,5 @@
 
+import Swal from "sweetalert2";
 import {supabase} from "../index"
 
 const tabla= "empresa"
@@ -12,5 +13,11 @@ export async function InsertarEmpresa(p){
         //});
         return;
     }
+    return data;
+}
+
+export async function MostrarEmrpesaXidusuario(p){
+    const {data} = await supabase.rpc("mostrarempresaxiduser",p).maybeSingle();
+    
     return data;
 }
