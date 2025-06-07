@@ -1,5 +1,5 @@
 import {Routes,Route} from 'react-router-dom';
-import { Categorias, Configuraciones, Home, Login, ProtectedRoute, Spinner1, useEmpresaStore, UserAuth,useUsuariosStore } from '../index';
+import { Categorias, Configuraciones, Home, Login, Marca, ProtectedRoute, Spinner1, useEmpresaStore, UserAuth,useUsuariosStore } from '../index';
 import { useQuery } from '@tanstack/react-query';
 export function MyRoutes(){
 
@@ -23,6 +23,7 @@ export function MyRoutes(){
                 <Route path="/" element={<Home/>}/>
                 <Route path="/Configuracion" element={<Configuraciones/>}/>
                 <Route path="/Configuracion/Categorias" element={<Categorias/>}/>
+                <Route path="/Configuracion/Marca" element={<Marca/>}/>
 
             </Route>
             <Route path="/login" element={<Login/>}/>
